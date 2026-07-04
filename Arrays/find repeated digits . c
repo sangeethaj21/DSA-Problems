@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int seen[10]={0};
+    int N;
+    printf("enter the num:");
+    scanf("%d",&N);
+    
+    int rem;
+    while(N>0)
+    {
+        rem=N%10;
+        if(seen[rem]==1);
+        break;
+        seen[rem]=1;
+        N=N/10;
+    }
+    if(N>0)
+    printf("yes");
+    else
+    printf("no");
+    return 0;
+}
